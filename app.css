@@ -246,3 +246,125 @@ header {
 .profileName:hover {
   background-color: #616161 !important;
 }
+
+.mobileLogo {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  background-color: #f1f1f1;
+}
+
+.center {
+  width: 800px;
+  height: 503px;
+}
+
+.select_plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  width: 100%;
+  height: 56px;
+  background: #1a1a1a;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.select_plan span {
+  color: #e3e3e3;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+}
+
+.select_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+  height: 28px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: default;
+}
+
+.cancel_btn {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileLogo {
+    display: block;
+    margin-left: -10px;
+  }
+
+  .header {
+    padding: 0px 10px;
+  }
+
+  .desktopLogo {
+    display: none;
+  }
+
+  .search {
+    width: 238px;
+    background-color: #303030;
+    border: 1px solid #616161;
+  }
+
+  .notification {
+    background: none !important;
+  }
+
+  .profileName {
+    background: none !important;
+    width: fit-content;
+  }
+
+  .profileName span {
+    display: none;
+  }
+
+  .notification_dropdown {
+    width: 80%;
+    height: 136px;
+  }
+
+  .select_plan {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    height: 120px;
+    border-radius: 0px;
+    width: 100%;
+    padding: 0%;
+  }
+
+  .cancel_btn {
+    position: absolute;
+    right: 15px;
+    margin-top: -120px;
+  }
+
+  .select_plan span,
+  .select_btn {
+    margin-left: 15px;
+  }
+
+  .select_plan span {
+    width: 90%;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 50px;
+  }
+}
