@@ -103,7 +103,7 @@
 
       <div class="profile">
         <div class="notification_div">
-          <div class="notification" onclick="displayNotificationDropdown()">
+          <button class="notification" onclick="displayNotificationDropdown()">
             <svg
               width="30"
               height="30"
@@ -117,7 +117,7 @@
                 fill="#E3E3E3"
               />
             </svg>
-          </div>
+          </button>
           <div class="notification_dropdown">
             <div class="alert">
               <span>Alerts</span>
@@ -167,10 +167,10 @@
         </div>
 
         <div>
-          <div class="profileName" onclick="displayProfileDropdown()">
+          <button class="profileName" onclick="displayProfileDropdown()">
             <span>Davii Collections</span>
             <div class="initials">DC</div>
-          </div>
+          </button>
 
           <div class="profileName_dropdown">
             <div class="store">
@@ -319,33 +319,33 @@
               >Select a plan</a
             >
 
-            <svg
-              class="cancel_btn"
-              onclick="cancelSelectPlan()"
-              width="22"
-              height="22"
-              viewBox="0 0 21 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14.4697 15.0303C14.7626 15.3232 15.2374 15.3232 15.5303 15.0303C15.8232 14.7374 15.8232 14.2626 15.5303 13.9697L11.5607 10L15.5303 6.03033C15.8232 5.73744 15.8232 5.26256 15.5303 4.96967C15.2374 4.67678 14.7626 4.67678 14.4697 4.96967L10.5 8.93934L6.53033 4.96967C6.23744 4.67678 5.76256 4.67678 5.46967 4.96967C5.17678 5.26256 5.17678 5.73744 5.46967 6.03033L9.43934 10L5.46967 13.9697C5.17678 14.2626 5.17678 14.7374 5.46967 15.0303C5.76256 15.3232 6.23744 15.3232 6.53033 15.0303L10.5 11.0607L14.4697 15.0303Z"
-                fill="#E3E3E3"
-              />
-            </svg>
+            <button class="cancel_btn" onclick="cancelSelectPlan()">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 21 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.4697 15.0303C14.7626 15.3232 15.2374 15.3232 15.5303 15.0303C15.8232 14.7374 15.8232 14.2626 15.5303 13.9697L11.5607 10L15.5303 6.03033C15.8232 5.73744 15.8232 5.26256 15.5303 4.96967C15.2374 4.67678 14.7626 4.67678 14.4697 4.96967L10.5 8.93934L6.53033 4.96967C6.23744 4.67678 5.76256 4.67678 5.46967 4.96967C5.17678 5.26256 5.17678 5.73744 5.46967 6.03033L9.43934 10L5.46967 13.9697C5.17678 14.2626 5.17678 14.7374 5.46967 15.0303C5.76256 15.3232 6.23744 15.3232 6.53033 15.0303L10.5 11.0607L14.4697 15.0303Z"
+                  fill="#E3E3E3"
+                />
+              </svg>
+            </button>
           </div>
         </section>
 
         <section class="setup_guide">
           <div class="setup">
             <strong>Setup guide</strong>
-            <div class="arrowDiv" onclick="rotate()">
+            <button class="arrowBtn" onclick="rotate()">
               <img
                 src="https://crushingit.tech/hackathon-assets/icon-arrow-up.svg"
                 alt="arrow-down"
                 class="arrow"
               />
-            </div>
+            </button>
           </div>
           <p class="para">
             Use this personalized quide to get your store up and running.
@@ -360,7 +360,7 @@
           <div class="category">
             <div class="main_card" onclick="toggleDropdown(1)">
               <div class="catDiv">
-                <span
+                <button
                   class="first_icon icon"
                   name="tick"
                   onclick="clickIcon(firstIcon)"
@@ -386,7 +386,7 @@
                       stroke-dasharray="5 5"
                     />
                   </svg>
-                </span>
+                </button>
                 <strong>Customize your online store</strong>
               </div>
 
@@ -421,7 +421,7 @@
 
             <div class="others main_card" onclick="toggleDropdown(2)">
               <div class="catDiv">
-                <span
+                <button
                   class="second_icon icon"
                   name="tick"
                   onclick="clickIcon(secondIcon)"
@@ -447,7 +447,7 @@
                       stroke-dasharray="5 5"
                     />
                   </svg>
-                </span>
+                </button>
                 <strong>Add your first product</strong>
               </div>
 
@@ -486,7 +486,7 @@
 
             <div class="others main_card" onclick="toggleDropdown(3)">
               <div class="catDiv">
-                <span
+                <button
                   class="third_icon icon"
                   name="tick"
                   onclick="clickIcon(thirdIcon)"
@@ -512,7 +512,7 @@
                       stroke-dasharray="5 5"
                     />
                   </svg>
-                </span>
+                </button>
                 <strong>Add a custom domain</strong>
               </div>
 
@@ -548,7 +548,7 @@
 
             <div class="others main_card" onclick="toggleDropdown(4)">
               <div class="catDiv">
-                <span
+                <button
                   class="fourth_icon icon"
                   name="tick"
                   onclick="clickIcon(fourthIcon)"
@@ -574,7 +574,7 @@
                       stroke-dasharray="5 5"
                     />
                   </svg>
-                </span>
+                </button>
                 <strong>Name your store</strong>
               </div>
 
@@ -610,7 +610,7 @@
 
             <div class="others main_card" onclick="toggleDropdown(5)">
               <div class="catDiv">
-                <span
+                <button
                   class="fifth_icon icon"
                   name="tick"
                   onclick="clickIcon(fifthIcon)"
@@ -636,7 +636,7 @@
                       stroke-dasharray="5 5"
                     />
                   </svg>
-                </span>
+                </button>
                 <strong>Setup a payment provider</strong>
               </div>
 

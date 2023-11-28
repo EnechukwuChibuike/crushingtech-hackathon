@@ -69,6 +69,7 @@ header {
   width: 35px;
   cursor: pointer;
   border-radius: 8px;
+  border: none;
 }
 
 .notification_dropdown {
@@ -111,6 +112,7 @@ header {
   border-radius: 8px;
   padding: 0px 3px;
   cursor: pointer;
+  border: none;
 }
 
 .profileName_dropdown {
@@ -301,6 +303,8 @@ main {
 }
 
 .cancel_btn {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
@@ -321,7 +325,7 @@ main {
   align-items: center;
 }
 
-.arrowDiv {
+.arrowBtn {
   height: 28px;
   width: 28px;
   border-radius: 6px;
@@ -329,9 +333,11 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
-.arrowDiv:hover,
+.arrowBtn:hover,
 .import:hover {
   background-color: #dbdbdb;
 }
@@ -390,6 +396,7 @@ main {
 .icon {
   cursor: pointer;
   height: fit-content;
+  border: none;
 }
 
 .theme {

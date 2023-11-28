@@ -46,13 +46,15 @@ function cancelSelectPlan() {
 
 function rotate() {
   if (
-    arrow.src === "https://crushingit.tech/hackathon-assets/icon-arrow-up.svg"
+    arrow.src === "https://crushingit.tech/hackathon-assets/icon-arrow-down.svg"
   ) {
-    arrow.src = "https://crushingit.tech/hackathon-assets/icon-arrow-down.svg";
-    category.style.height = "300px";
-  } else {
     arrow.src = "https://crushingit.tech/hackathon-assets/icon-arrow-up.svg";
     category.style.height = "0px";
+    document.querySelector(".arrowBtn").style.background = "none";
+  } else {
+    document.querySelector(".arrowBtn").style.background = "#dbdbdb";
+    arrow.src = "https://crushingit.tech/hackathon-assets/icon-arrow-down.svg";
+    category.style.height = "320px";
   }
 }
 
